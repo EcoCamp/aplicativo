@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCamp</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+
+<body>
+    <div id="black"></div>
+    <div id="ctn-principal" ondragstart="return false">
+        
+
+        <div class="container-chat" id="chatbox">
+
+            <p id="texto">Ola pessoal, me chamo Professor Ipê, sejam bem vindos ao
+                Eco Camp. Aqui vamos aprender e nos divertir!! Estou ansioso para conhecer
+                vocês! <span id="arrow-box"><button onclick="frame1()"><img src="img/arrow.png"></button></span> </p>
+
+        </div>
+
+        <div class="opcao-container" id="opcoes">
+            <button ><img onclick="finalBom()" onmouseover="olhar()" src="img/opcao-1.png" id="btn-opcao-1"></button>
+           
+            <div></div>
+           
+            <button ><img onclick="finalRuim()" onmouseover="olhar()" src="img/opcao-2.png" id="btn-opcao-2"></button>
+
+        </div>
+
+        <div id="texto-fim-ctn" class="texto-fim-ctn" >
+
+            <p>
+                Estou orgulhoso! Estive te observando e você tomou a decisão correta!
+                Acho que está pronto para a próxima missão!
+                <button onclick="frame26()" class="setas-fim"><img src="img/arrow.png"></button>
+            </p>
+
+        </div>
+
+        
+
+        <div id="medal-overlay">
+            <a href="../home.html" id="sair" style="display: none;"><h2 id="voltar-home">Voltar para Home <img src="img/sair.png"> </h2></a>
+        </div>
+
+        <img src="img/2.jpg" id="pic-over">
+        <img src="img/1.jpg" id="pic-principal">
+    
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
