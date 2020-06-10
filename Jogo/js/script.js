@@ -114,7 +114,7 @@ function frame8() {
     document.getElementById("black").style.display = "block"
 
     setTimeout(function () {
-        quadro.src = "img/5.jpg";
+        quadro.src = "img/5.gif";
         texto.innerHTML = "Essa é uma história que meu avô me contou e aconteceu nessa região que estamos agora. Ele jura que é uma história verdadeira." + `<button onclick="frame9()"><img src="img/arrow.png"></button></p>`
     }, 620)
 
@@ -130,8 +130,8 @@ function frame8() {
 }
 
 function frame9() {
-    quadro.src = "img/6.jpg";
-    texto.innerHTML = `A muito tempo atrás existia uma grande tribo indígena que vivia aos arredores da floresta tupi, essa tribo vivia da terra, só comiam coisas saudáveis.` + `<button onclick="frame9meio()"><img src="img/arrow.png"></button></p>`;
+    quadro.src = "img/6.gif";
+    texto.innerHTML = `Há muito tempo atrás existia uma grande tribo indígena que vivia aos arredores da floresta tupi, essa tribo vivia da terra, só comiam coisas saudáveis.` + `<button onclick="frame9meio()"><img src="img/arrow.png"></button></p>`;
     voice.src = "audio/voice/10.mp3"
 }
 
@@ -141,7 +141,7 @@ function frame9meio() {
 }
 
 function frame10() {
-    quadro.src = "img/7.jpg";
+    quadro.src = "img/7.gif";
     texto.innerHTML = `Ela contou que os filhos dela, os espíritos da água, do vento, do fogo e da terra, estavam prestes a entrar em uma crise, por causa das queimadas,
 desmatamentos, lixo e a poluição do ar ` + `<button onclick="frame11()"><img src="img/arrow.png"></button></p>`;
 
@@ -151,13 +151,13 @@ desmatamentos, lixo e a poluição do ar ` + `<button onclick="frame11()"><img s
 }
 
 function frame11() {
-    quadro.src = "img/8.jpg";
+    quadro.src = "img/8.gif";
     texto.innerHTML = `E pediu para restabelecer o equilíbrio que havia perdido` + `<button onclick="frame12()"><img src="img/arrow.png"></button></p>`;
     voice.src = "audio/voice/13.mp3"
 }
 
 function frame12() {
-    quadro.src = "img/7.jpg";
+    quadro.src = "img/7.gif";
     texto.innerHTML = ` Pela manhã, ele ouviu falar que na cidade próxima
 aconteceu uma enchente muito grande e que não sabiam o porque dela. A tribo foi
 até o rio e descobriu que ele estava cheio de lixo.` + `<button onclick="frame13()"><img src="img/arrow.png"></button></p>`;
@@ -165,7 +165,7 @@ voice.src = "audio/voice/14.mp3"
 }
 
 function frame13() {
-    quadro.src = "img/5.jpg";
+    quadro.src = "img/5.gif";
     texto.innerHTML = `Então foram até as margens e começaram a limpeza. Assim que terminaram, os peixes voltaram a viver por lá, e nunca mais
 houveram enchentes` + `<button onclick="frame14()"><img src="img/arrow.png"></button></p>`;
 voice.src = "audio/voice/15.mp3"
@@ -184,7 +184,7 @@ voice.src = "audio/voice/17.mp3"
 }
 
 function frame16() {
-    quadro.src = "img/9.jpg";
+    quadro.src = "img/9.gif";
     chatbox.style.backgroundImage = 'url("./img/chat-rec.png")';
     texto.innerHTML = `Uau, que história incrível. Um dia eu quero ser um Eco Guardian
 também.` + `<button onclick="frame17()"><img src="img/arrow.png"></button></p>`;
