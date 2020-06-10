@@ -21,8 +21,8 @@ body{
 background-color: black;
 pointer-events: none;
 }
-button,a{
-pointer-events: all;
+button,a,audio{
+pointer-events: all !important;
 }
 
 #black{
@@ -37,6 +37,146 @@ transition: all 0.8s;
 animation-duration: 0.8s;  
 z-index: 10;
 background-color: black;
+
+}
+
+
+
+/* SELEÇÃO D PERSONAGEM PT 2*/
+
+#black-inicio{
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index: 3;
+opacity: 1;
+transition: all 0.8s;
+}
+
+#container-escolhas{
+color: white;
+font-family: 'grobold';
+letter-spacing: 4px;
+font-weight:lighter;
+font-size: 2em;
+text-align: center;
+margin-top: 20px;
+width: 100%;
+height: 100%;
+}
+
+#container-char{
+width:75%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+max-height: 90vh;
+justify-items: center;
+}
+#container-char img{
+max-height: 80vh;
+cursor: pointer;
+padding: 30px;
+}
+
+.char-ativado{
+border: 2px solid lime;
+border-radius: 10px;
+box-shadow: 0 0 30px lime;
+mix-blend-mode: screen;
+background-color: rgba(0, 255, 0, 0.144);
+}
+
+
+@keyframes blackout {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+#confirmar{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 30px;
+z-index: 3;
+background-color: transparent;
+color: white;
+background-image: url('../img/madeira-2.png');
+background-size: 100% 100%;
+font-family: 'grobold';
+letter-spacing: 2px;
+font-size: 2em;
+padding: 15px 50px;
+cursor: pointer;
+border: none;
+text-shadow: 0 0 8px rgb(78, 35, 0), 0 0 4px rgb(78, 35, 0);
+transition: all 0.5s;
+}
+
+#confirmar:hover{letter-spacing: 3.5px;}
+
+
+#comeco{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 2;
+}
+
+
+#abertura{
+position: absolute;
+background-color: black;
+width: 100%;
+height: 100%;
+background-image: url("../img/abertura.jpg");
+background-size: auto 100%;
+background-position: center center;
+background-repeat: no-repeat;
+animation-name: fade;
+animation-duration: 0.8s;  
+animation-fill-mode: forwards;
+animation-direction: reverse;
+animation-play-state: paused;
+}
+
+
+
+/*FINAL SELEÇÃO D PERSONAGEM PT 2*/
+
+
+
+#musicBtn{
+pointer-events: all;
+position: absolute;
+top: 0px;
+right: 0px;
+width: 60px;
+margin: 10px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+z-index: 2;
+}
+#voiceBtn{
+pointer-events: all;
+position: absolute;
+top: 0px;
+right: 0px;
+width: 60px;
+margin: 10px;
+margin-right: 70px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+z-index: 2;
 }
 
 #ctn-principal{
@@ -45,7 +185,6 @@ top: 0;
 left: 0;
 width: max-content;
 height: 100%;
-
 background-color: black;
 left: 50%;
 transform: translateX(-50%);
@@ -76,21 +215,22 @@ position: absolute;
 bottom: 0;
 width: 100%;
 height: 270px;
-color: white;
-text-shadow: 0 0 8px rgb(78, 35, 0), 0 0 4px rgb(78, 35, 0);
-padding-top: 95px;
-padding-left: 90px;
-padding-right: 55px;
-font-size: 1.8em;
-font-family: 'Baloo Chettan 2', cursive;
-box-sizing: border-box;
 z-index: 2;
 }
 
 .container-chat p{
 position: relative;
+text-align: justify;
 max-width: 100%;
-
+color: white;
+text-shadow: 0 0 8px rgb(78, 35, 0), 0 0 4px rgb(78, 35, 0);
+padding-top: 101px;
+padding-left: 85px;
+padding-right: 80px;
+font-size: 1.65em;
+font-family: 'Baloo Chettan 2', cursive;
+text-transform: uppercase;
+box-sizing: border-box;
 }
 
 #chatbox{
@@ -122,7 +262,7 @@ vertical-align: middle;
 cursor: pointer;
 position: fixed;
 bottom: 30px;
-right: 58px;
+right: 75px;
 pointer-events: all;
 }
 

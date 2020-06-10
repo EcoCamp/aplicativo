@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCamp</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+
+<body>
+    <div id="black-inicio">
+        <div id="container-escolhas">
+
+            <h2>ESCOLHA SEU PERSONAGEM</h2>
+
+            <div id="container-char">
+
+                <a href="jogo.html"><img src="img/char1-smile.png" id="char1" onmouseover="rosto()"></a>
+
+                <a><img src="img/char2-smile.png" class="char-ativado" id="char2" onmouseover="rosto()"></a>
+            </div>
+        </div>
+
+        <button id="confirmar" onclick="comecar()">Começar</button>
+    </div>
+
+    <div id="comeco">
+        <div id="abertura">a</div>
+    </div>
+
+    <div id="black"></div>
+    <div id="ctn-principal" ondragstart="return false">
+        
+        <img id="musicBtn" src="img/music-on.png" onclick="classToggle()">
+        
+        <audio id="trilha-sonora" style="display:none" src="audio/floresta.mp3" loop autoplay></audio>
+
+
+        <img id="voiceBtn" src="img/audio-on.png" onclick="classToggle()">
+        
+        <audio id="voice" style="display:none" src="audio/voice/1.mp3" autoplay></audio>
+
+
+
+        <div class="container-chat" id="chatbox">
+
+            <p id="texto">Olá pessoal, me chamo Professor Ipê, sejam bem vindos ao
+                Eco Camp. Aqui vamos aprender e nos divertir!! Estou muito ansioso para conhecer
+                todos vocês! <span id="arrow-box"><button onclick="frame1()"><img src="img/arrow.png"></button></span> </p>
+
+        </div>
+
+        <div class="opcao-container" id="opcoes">
+            <button ><img onclick="finalBom()" onmouseover="olhar()" src="img2/opcao-1.png" id="btn-opcao-1"></button>
+           
+            <div></div>
+           
+            <button ><img onclick="finalRuim()" onmouseover="olhar()" src="img2/opcao-2.png" id="btn-opcao-2"></button>
+
+        </div>
+
+        <div id="texto-fim-ctn" class="texto-fim-ctn" >
+
+            <p>
+                Estou orgulhoso! Estive te observando e você tomou a decisão correta!
+                Acho que está pronto para a próxima missão!
+                <button onclick="frame26()" class="setas-fim"><img src="img/arrow.png"></button>
+            </p>
+
+        </div>
+
+        
+
+        <div id="medal-overlay">
+            <a href="../home.html" id="sair" style="display: none;"><h2 id="voltar-home">Voltar para o inicio <img src="img/sair.png"> </h2></a>
+        </div>
+
+        <img src="img2/2.jpg" id="pic-over">
+        <img src="img2/1.jpg" id="pic-principal">
+    
+    </div>
+    
+    <script src="js/script-2.js"></script>
+</body>
+
+</html>

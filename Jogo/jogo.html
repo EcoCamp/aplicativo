@@ -10,15 +10,45 @@
 </head>
 
 <body>
+    <div id="black-inicio">
+        <div id="container-escolhas">
+
+            <h2>ESCOLHA SEU PERSONAGEM</h2>
+
+            <div id="container-char">
+
+                <a><img class="char-ativado" src="img/char1-smile.png" id="char1" onmouseover="rosto()"></a>
+
+                <a href="jogo-2.html"><img src="img/char2.png" id="char2" onmouseover="rosto()"></a>
+            </div>
+        </div>
+
+        <button id="confirmar" onclick="comecar()">Começar</button>
+    </div>
+
+    <div id="comeco">
+        <div id="abertura">a</div>
+    </div>
+
     <div id="black"></div>
     <div id="ctn-principal" ondragstart="return false">
         
+        <img id="musicBtn" src="img/music-on.png" onclick="classToggle()">
+        
+        <audio id="trilha-sonora" style="display:none" src="audio/floresta.mp3" loop autoplay></audio>
+
+
+        <img id="voiceBtn" src="img/audio-on.png" onclick="classToggle()">
+        
+        <audio id="voice" style="display:none" src="audio/voice/1.mp3" autoplay></audio>
+
+
 
         <div class="container-chat" id="chatbox">
 
-            <p id="texto">Ola pessoal, me chamo Professor Ipê, sejam bem vindos ao
-                Eco Camp. Aqui vamos aprender e nos divertir!! Estou ansioso para conhecer
-                vocês! <span id="arrow-box"><button onclick="frame1()"><img src="img/arrow.png"></button></span> </p>
+            <p id="texto">Olá pessoal, me chamo Professor Ipê, sejam bem vindos ao
+                Eco Camp. Aqui vamos aprender e nos divertir!! Estou muito ansioso para conhecer
+                todos vocês! <span id="arrow-box"><button onclick="frame1()"><img src="img/arrow.png"></button></span> </p>
 
         </div>
 
@@ -44,7 +74,7 @@
         
 
         <div id="medal-overlay">
-            <a href="../home.html" id="sair" style="display: none;"><h2 id="voltar-home">Voltar para Home <img src="img/sair.png"> </h2></a>
+            <a href="../home.html" id="sair" style="display: none;"><h2 id="voltar-home">Voltar para o inicio <img src="img/sair.png"> </h2></a>
         </div>
 
         <img src="img/2.jpg" id="pic-over">
