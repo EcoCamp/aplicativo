@@ -413,6 +413,7 @@ function comecar(){
 
 document.getElementById("black-inicio").style.opacity = "0";
 trilha.play();
+trilha.autoplay = "true";
 
 setTimeout(function () { document.getElementById("black-inicio").style.display = "none"; 
 
@@ -421,6 +422,7 @@ setTimeout(function () { document.getElementById("abertura").style.animationPlay
 
 setTimeout(function () { document.getElementById("comeco").style.display = "none"
 voice.play();
+voice.autoplay = "true";
 }, 1950) 
 
 }, 801)  
